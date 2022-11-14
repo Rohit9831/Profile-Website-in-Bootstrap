@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="Layout.css">
+
+  <body>
+
+
+
+    <!-- Notification Aleart -->
+    
+
+    <div class="alert alert-warning alert-dismissible fade show text-center " role="alert">
+      <strong>Hey Guys!</strong> Sorry for inconvinence, This website is under Development.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+
+
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Rohit Gupta</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+          </ul>
+
+          
+
+          <!--
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            
+            <button class="btn btn-outline-dark" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+        -->
+
+
+
+<div class="Profile-Btn">
+  <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+    Profile
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Your Account</a></li>
+    <li><a class="dropdown-item" href="#">Notifications</a></li>
+    <li><a class="dropdown-item" href="#">Setting</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="SignIn.html">Sign In</a></li>
+  </ul>
+</div>      
+    </nav>
+
+
+<!-- About Coloum -->
+<div class="container col-xxl-8 px-2 py-2">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="Rohit Image.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3 fw-bolder">Rohit Gupta</h1>
+      <p class="lead">This is a modified sample website, Which occupies the entire horizontal space. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tenetur quis enim ipsam, aperiam cumque omnis nihil molestias? tempora tenetur quis enim ipsam, aperiam cumque omnis nihil molestias? Praesentium architecto nobis !</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Articles Coloum -->
+<div class="container my-1">
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="float-start img-fluid mx-auto" src="HTML.jpeg" alt="HTML" style="max-width: 50%;">
+            <div class="card-body">
+              <p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger">View full article.</button>
+                </div>
+                <small class="text-muted">Written by Rohit Gupta</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="float-start img-fluid mx-auto" src="CSS.jpeg" alt="CSS" style="max-width: 47%;">
+
+            <div class="card-body">
+              <p class="card-text">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">View full article.</button>
+                </div>
+                <small class="text-muted">Written by Rohit Gupta</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="float-start img-fluid mx-auto" src="Python.jpeg" alt="Python" style="max-width:47%;">
+
+            <div class="card-body">
+              <p class="card-text">Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-warning style">View full article.</button>
+                </div>
+                <small class="text-muted">Written by Rohit Gupta</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>© 2021–2022 Company, Inc. · <a href="#">About</a> · <a href="#">Terms</a> · <a href="Rough.html">Rough</a> . <a href="Contact.html">Contact Us</a></p>
+</footer>
+</main>
+
+  </body>
+  </html>
